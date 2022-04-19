@@ -1,0 +1,30 @@
+{
+	"name": "Check Appointment",
+	"description": "Check Visa Appointment Yerevan/Dubai/Ankara!",
+	"version": "1.0",
+	"manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "background"
+    ],
+    "icons": {
+        "128": "embassy.png"
+    },
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://ais.usvisa-info.com/en-ir*"
+            ],
+            "js": [
+                "check.js"
+            ]
+        }
+    ]
+}

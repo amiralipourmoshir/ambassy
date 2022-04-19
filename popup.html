@@ -1,0 +1,98 @@
+<html dir="rtl" style="font-size: small;" >
+  <head>
+    <title>افزونه چک کردن وقت ویزا</title>
+    <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"></head>
+  <body>
+    <div style="padding: 20px 20px 20px 20px;">
+      <div  class="top-menu fixed-top">
+        <img id="icon" width="35" src="embassy.png"/><span style="margin-left: 5px">American Embassy</span>
+        <img id="test-sound" class="float-left grear" width="24" src="sound.png" alt="">
+
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <h5 class="text-center"> رصد کردن وقتهای سفارت آمریکا در ایروان، دبی، و آنکارا</h5>
+         کدام سفارت:<br>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="armenia" name="embassyname" value="armenia" checked class="custom-control-input">
+        <label class="custom-control-label" for="armenia"><img width="16" src="armenia.png" alt="ارمنستان"></label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="dubai" name="embassyname" value="dubai" class="custom-control-input">
+        <label class="custom-control-label" for="dubai"><img width="16" src="united-arab-emirates.png" alt="دبی"></label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="turkey" name="embassyname" value="turkey" class="custom-control-input">
+        <label class="custom-control-label" for="turkey"><img width="16" src="turkey.png" alt="ترکیه"></label>
+      </div>
+        <br>
+      <h6>بازه تاریخ چک کردن وقت</h6>
+
+      <div class="form-row">
+        <div class="col-1">
+          <label class="col-form-label col-form-label-sm" for="startdate">از:</label>
+        </div>
+        <div class="col-lg-4 col-11">
+          <input type="date" id="startdate" class="form-control" placeholder="yyyy-mm-dd" />
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="col-1">
+          <label class="col-form-label col-form-label-sm" for="enddate">تا:</label>
+        </div>
+        <div class="col-lg-4 col-11">
+          <input type="date" id="enddate" class="form-control" placeholder="yyyy-mm-dd" />
+        </div>
+      </div>
+
+      <br>
+      <p>
+        توجه: تاریخها به فرمت yyyy-dd-mm است.<br>
+        اگر تاریخ شروع و یا پایانی در نظر ندارید، فیلد مربوطه را خالی بگذارید.
+      </p>
+      <br>
+      <div class="form-row">
+        <div class="col-2">
+          <label class="col-form-label col-form-label-sm" for="email">ایمیل: </label>
+        </div>
+        <div class="col-lg-4 col-10">
+          <input type="email" id="email" class="form-control" placeholder="test@emample.com" dir="ltr" />
+        </div>
+      </div>
+      <br>
+      <p>
+        راهنمایی : اگر زمانی برای سفارت شما تائین شد<br>
+        زمان و آن سفارت به این ایمیل فرستاده می شود
+      </p>
+
+      <hr>
+<div class="row">
+  <label class="switch" style="margin-left: 4px">
+    <input type="checkbox" checked id="hasalarm" value="alarm">
+    <span class="slider round"></span>
+  </label>
+  <label for="hasalarm">بوق هشدار ممتد</label>
+</div>
+      <br><br>
+    <span style="cursor:pointer;" id = "set_API">تنظیم API</span>
+    <div style="margin: 20px 20px 20px 20px">
+      <input class="form-control" id="API_box" style="width: auto" placeholder="https:// ..." dir="ltr"/>
+    </div>
+      <br>
+      <center><button class="btn btn-primary w-100" id="ok_btn" type="button">ذخیره</button></center>
+      <hr>
+      توجه:<br>
+      - برای شروع، سایت مربوطه را از <a href="https://ais.usvisa-info.com/en-ir?visa_type=niv" target="_blank">اینجا</a> باز کنید و آن را باز نگه دارید.
+      <br>
+- پس از تغییر تنظیمات، لطفا ذخیره کنید و رفرش کنید.
+<!---    added up to here    -->
+    </div>
+
+  </body>
+</html>
